@@ -1,0 +1,723 @@
+@font-face {
+    font-family: 'Russo One';
+    src: url('./fonts/RussoOne-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* Сброс настроек CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+
+/* Фон и блок-обертка */
+
+body {
+    background-color: #1E1E1E;
+    font-family: 'Russo One', sans-serif;
+   /* background-color: #24A0C5;*/
+    background-image: url("img/photo/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* Блок навигации */
+
+.nav {
+    height: 100px;
+    background-color: #191919;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 50px;
+    border-radius: 40px 40px 0 0;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.nav-logo {
+    width: 68px;
+}
+
+.nav-menu {
+    height: 100px;
+    padding-top: 40px;
+}
+
+.nav-menu-link {
+    width: auto;
+    margin-right: 45px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-menu-link:hover {
+    border-bottom: 2px solid #38ACFF ;
+    padding-bottom: 5px;
+    transition: 0.1s;
+}
+
+
+
+/* Блок с информацией обо мне */
+
+.hero {
+    height: 450px;
+    background: linear-gradient(90deg, rgb(24, 24, 24), rgb(0, 39, 43));
+    border: #181818 1px solid;
+    color: #fff;
+    padding: 0 50px 0 50px;
+}
+
+.caption {
+    text-align: center;
+    margin: 35px 0;
+    letter-spacing: 3px;
+    text-shadow:
+        1px 1px 1px black,
+        2px 2px 1px black;
+}
+
+.hero__content {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero__img {
+    width: 440px;
+    height: 300px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.hero__text {
+    width: 550px;
+    height: 300px;
+    display: inline-block;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.myname {
+    color: #38ACFF;
+    font-weight: bold;
+}
+
+.personal-history {
+    font-weight: bold;
+}
+
+
+
+/* Блок личных качеств */
+
+.skills {
+    width: 100%;
+    height: 360px;
+    background-color: #C3CAD2;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #10202D;
+    padding: 0 50px 0 50px;
+    border: #181818 1px solid;
+}
+
+.skills h2 {
+    padding-top: 35px;
+    font-size: 20px;
+}
+
+.skills__block {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.block-cards {
+    width: 250px;
+    height: 210px;
+    background-color: #0C8CE9;
+    background-color: rgba(12, 140, 233, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.block-cards:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.skills__icon {
+   width: 64px;
+   margin: 0 0 30px 75px;
+}
+
+.skills__description {
+    font-size: 16px;
+}
+
+
+
+/* Блок навыков и достижений */
+
+.path {
+    height: 530px;
+    background: linear-gradient(90deg, rgb(24, 24, 24), rgb(0, 39, 43));
+    padding: 0 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: #181818 1px solid;
+    flex-wrap: wrap;
+}
+
+.path h2 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.path__left, .path__right {
+    height: 430px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.path__border {
+    width: 2px;
+    height: 430px;
+    background-color: #C3CAD2;
+}
+
+.path__left__content, .path__right__content {
+    width: 500px;
+    height: 102px;
+    background-color: #D9D9D9;
+    color: #10202D;
+    border-radius: 15px;
+    border-left: #0C8CE9 20px solid;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    padding: 0 30px 0 30px;
+    flex-wrap: wrap;
+}
+
+.path__left__content:last-child, .path__right__content:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* Блок с проектами */
+
+.project {
+    height: 400px;
+    background-color: #C3CAD2;
+    text-align: center;
+    padding: 0 50px 0 50px;
+    border: #181818 1px solid;
+}
+
+.project h2 {
+    font-size: 20px;
+    color: #10202D;
+    text-transform: uppercase;
+    padding: 35px 0 35px 0;
+}
+
+.project__block {
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project__cards {
+    width: 320px;
+    height: 220px;
+}
+
+.project__cards:hover {
+   transform: rotate(5deg);
+   transition: 0.1s;
+   border: 10px solid #38ACFF;
+}
+
+.project__cards img {
+    width: 320px;
+    height: 220px;
+}
+
+
+
+/* Блок с контактами */
+
+.contacts {
+    height: 520px;
+    background: linear-gradient(90deg, rgb(24, 24, 24), rgb(0, 39, 43));
+    text-align: center;
+    padding: 0 50px 0 50px;
+    border: #181818 1px solid;    
+}
+
+.contacts h2 {
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 35px 0 35px 0;
+}
+
+.contacts__content {
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contacts__form {
+    height: 360px;
+    width: 410px;
+}
+
+.contacts__border {
+    width: 2px;
+    height: 360px;
+    background-color: #C3CAD2;
+}
+
+.contacts__svyaz {
+    height: 360px;
+    width: 410px;
+}
+
+.name, .tel {
+    height: 50px;
+    width: 410px;
+    margin-bottom: 15px;
+    font-family: 'Russo One';
+    font-size: 16px;
+    padding-left: 20px;
+    color: #181818;
+    border-radius: 5px;
+}
+
+.feedback {
+    height: 100px;
+    width: 410px;
+    font-family: 'Russo One';
+    font-size: 16px;
+    padding: 10px 0 0 20px;
+    margin-bottom: 20px;
+    color: #181818;
+    border-radius: 5px;
+}
+
+.politic {
+    margin-right: 20px;
+}
+
+.politic__text {
+   font-size: 14px;
+   color: #fff;
+}
+
+.person {
+    text-decoration: none;
+    color: #0C8CE9;
+}
+
+.form-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, rgb(56, 172, 255), rgb(0, 49, 84));
+    border: 1px solid black;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Russo One';
+    margin-top: 40px;
+}
+
+.form-btn:active {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.contacts__svyaz {
+    height: 250px;
+    width: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.number, .telephon {
+    display: inline-block;
+    width: 410px;
+    height: 30px;
+}
+
+.vk {
+    width: 64px;
+}
+
+.vk:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.tg {
+    width: 64px;
+}
+
+.tg:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+
+
+/* Подвал */
+
+footer {
+    height: 80px;
+    background-color: #181818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 50px;
+    color: #fff;
+    border-radius: 0 0 40px 40px;
+    flex-wrap: wrap;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/******************************************************************************************************/
+
+@media (min-width:0) and (max-width:550px) {
+
+/* Блок навигации */
+
+body {
+    background-color: #fff;
+}
+
+.nav {
+    height: 50%;
+    padding: 0 15px 0 15px;
+    margin: 0;
+}
+
+.nav-menu {
+    text-align: center;
+    height: auto;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-menu-link {
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-logo {
+    display: none;
+}
+
+
+
+/* Блок с информацией обо мне */
+
+.hero {
+    height: auto;
+    padding: 0 15px 0 15px;}
+
+.hero__content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.caption {
+    font-size: 22px;
+}
+
+.hero__img {
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.hero__text {
+    width: 90%;
+    height: 90%;
+    display: inline-block;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+
+
+/* Блок личных качеств */
+
+.skills {
+    height: auto;
+    font-size: 18px;
+    padding: 0 15px 0 15px;
+}
+
+.skills h2 {
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.skills__block {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Блок навыков и достижений */
+
+.path {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 15px 0 15px;
+}
+
+.path h2 {
+    margin: 30px 0;
+    font-size: 18px;
+}
+
+.path__right h2 {
+    text-align: center;
+}
+
+.path__left, .path__right {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.path__right {
+    margin-bottom: 20px;
+}
+
+.path__left__content, .path__right__content {
+    width: 80%;
+    border-left: #0C8CE9 15px solid;
+}
+
+.path__left::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #C3CAD2;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.path__border {
+    display: none;
+}
+
+
+
+/* Блок с проектами */
+
+.project {
+    height: auto;
+    padding: 0 15px 0 15px;
+}
+
+.project h2 {
+    font-size: 18px;
+}
+
+.project__block {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.project__cards {
+    height: auto;
+    width: 95%;
+}
+
+.project__cards img {
+    width: 90%;
+    height: 90%;
+    border: #0C8CE9 3px solid;
+}
+
+
+
+/* Блок с контактами */
+
+.contacts {
+    height: auto;
+    padding: 0 15px 0 15px;
+}
+
+.contacts__border {
+    display: none;
+}
+
+.contacts h2 {
+    font-size: 18px;
+}
+
+.contacts__content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contacts__form {
+    height: auto;
+    width: 100%;
+}
+
+.contacts__svyaz {
+    height: auto;
+    width: 100%;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.name, .tel {
+    height: 50px;
+    width: 90%;
+}
+
+.feedback {
+    height: auto;
+    width: 90%;
+}
+
+.politic {
+    margin-right: 20px;
+}
+
+.politic__text {
+   font-size: 14px;
+   color: #fff;
+   margin-left: 20px;
+   display: flex;
+   align-items: center;
+}
+
+.pt {
+    display: inline-block;
+}
+
+.post::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #C3CAD2;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.number, .telephon {
+    display: inline-block;
+    width: 90%;
+    height: auto;
+    font-size: 20px;
+}
+
+.tg, .vk {
+    margin: 10px 0 30px 0;
+}
+
+
+
+/* Подвал */
+
+footer {
+    font-size: 14px;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+}

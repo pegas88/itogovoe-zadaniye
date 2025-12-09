@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-визитка Евгения Кучеренко</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>                                                                                                <!-- Шапка сайта с логотипом и ссылками меню -->
+    <header>
+            <div class="container">                          
+            <nav class="nav">
+                <img src="img\logo\logo.png" class="nav-logo" alt="Логотип">
+                <div class="nav-menu">
+                    <a href="#o-sebe" class="nav-menu-link">Обо мне</a>
+                    <a href="#raboty" class="nav-menu-link">Примеры работ</a>
+                    <a href="#cont" class="nav-menu-link">Контакты</a>
+                </div>
+            </nav>
+            </div>
+    </header>
+
+        <div class="container">
+            <section class="hero" id="o-sebe">                                                      <!-- Блок с вводной инвормацией о себе с текстом -->
+                <h1 class="caption"><span class="myname">Евгений Кучеренко</span> — начинающий 
+                frontend-разработчик</h1>
+
+                <div class="hero__content">
+                <img src="img\photo\photo.JPG" class="hero__img" alt="Фотография">
+                <p class="hero__text">Привет! Всегда увлекался технологиями и компьютерами. 
+                После того как открыл для себя возможности frontend-разработки, 
+                понял, что это именно то направление, где могу максимально 
+                реализовать свой потенциал. Несмотря на то что я только начинаю 
+                свой путь, я уже успел создать несколько собственных проектов и 
+                постоянно работаю над улучшением своих навыков.</p>  
+                </div> 
+
+            </section>
+        </div>
+
+    <main>                                                                                                 <!-- Основной контент сайта -->
+        <div class="container">
+            <section class="skills">                                                                           <!-- Блок с навыками -->
+                <h2>Что меня отличает</h2>
+                <div class="skills__block">
+
+                    <div class="block-cards">
+                        <div class="skills__icon">
+                            <img src="img\icons\target.png" alt="Иконка цели">
+                        </div>
+                            <p class="skills__description">всегда доводил начатые проекты до конца</p>
+                    </div>
+
+                    <div class="block-cards">
+                        <div class="skills__icon">
+                            <img src="img\icons\brain.png" alt="Иконка мозга с шестеренкой">
+                        </div>
+                            <p class="skills__description">люблю разбираться в сложных задачах</p>
+                    </div>
+
+                    <div class="block-cards">
+                        <div class="skills__icon">
+                            <img src="img\icons\book.png" alt="Иконка книги">
+                        </div>
+                            <p class="skills__description">быстро осваиваю новые технологии и подходы</p>
+                    </div>
+
+                    <div class="block-cards">
+                        <div class="skills__icon">
+                            <img src="img\icons\alarm-clock.png" alt="Иконка будильника">
+                        </div>
+                            <p class="skills__description">серьезно отношусь к дедлайнам и качеству работы</p>
+                    </div>
+                </div>
+                    
+            </section>
+
+        </div>
+        <div class="container">
+            <section class="path">                                                                            <!-- Блок-путь изучения -->
+                    <div class="path__left">
+                        <h2>Мой путь в разработку</h2>
+
+                        <div class="path__left__content">
+                            <p>Начал с самостоятельного изучения основ HTML и CSS</p>
+                        </div>
+
+                        <div class="path__left__content">
+                            <p>Участвую в онлайн-курсах и практических проектах</p>
+                        </div>
+
+                        <div class="path__left__content">
+                            <p>Постепенно добавил JavaScript в свой стек</p>
+                        </div>
+                    </div>
+
+                    <div class="path__border"></div>
+
+                    <div class="path__right">
+                        <h2>Текущие навыки и достижения</h2>
+
+                        <div class="path__right__content">
+                            <p>Уверенно владею HTML5 и CSS3</p>
+                        </div>
+
+                        <div class="path__right__content">
+                            <p>Изучаю JavaScript и его современные возможности</p>
+                        </div>
+
+                        <div class="path__right__content">
+                            <p>Работаю с популярными инструментами разработки</p>
+                        </div>
+                    </div>
+                    
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="project" id="raboty">                                                            <!-- Блок с моими проектами -->
+                <h2>Мои проекты</h2>
+                <div class="project__block">
+
+                    <div class="project__cards">
+                         <a href="https://pegas88.github.io/zadanie-1/task2.html"><img src="img\photo\project-1.jpg" alt=""></a>
+                    </div>
+
+                    <div class="project__cards">
+                        <a href="https://pegas88.github.io/day5-urok/"><img src="img\photo\project-2.jpg" alt=""></a>
+                    </div>
+
+                    <div class="project__cards">
+                        <a href="https://pegas88.github.io/day7-urok/"><img src="img\photo\project-3.jpg" alt=""></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="contacts" id="cont">                                                        <!-- Блок с контактными данными и формой -->
+                <h2>Связь со мной</h2>
+                <div class="contacts__content">
+                    <div class="contacts__form">
+                        <form action="#" method="POST" class="post">
+                        <input type="text" name="name" class="name" placeholder="Ваше имя" required>
+                        <input type="tel" name="phone" class="tel" placeholder="Номер телефона" required>
+                        <textarea name="feedback" rows="4" cols="50" class="feedback" placeholder="Сообщение для меня"></textarea>
+                        <label class="politic__text"><input class="politic" type="checkbox" name="politic"><span class="pt"> Даю согласие на <a href="#" class="person">обработку персональных данных</a></span></label>
+                        <button class="form-btn">Отправить</button>
+                        </form>
+                    </div>
+
+                    <div class="contacts__border"></div>
+
+                    <div class="contacts__svyaz">
+                        <span class="number">kucherenko.ei@yandex.ru</span>
+                        <span class="telephon">+7 920 000-00-00</span>
+                        <a href="#"><img src="img\icons\vk-logo.png" class="vk" alt="Логотип Вконтакте"></a>
+                        <a href="#"><img src="img\icons\tg-logo.png" class="tg" alt="Логотип Телеграм"></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+        
+    <footer class="container">                                                                                    <!-- Блок с футером -->
+                                                                                                                        
+            <span>@ Все права защищены, 2025</span>
+            <a href="#">Политика конфиденциальности</a>
+            
+    </footer>
+        
+</body>
+</html>
