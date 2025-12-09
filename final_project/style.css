@@ -616,6 +616,12 @@ body {
     width: 95%;
 }
 
+.project__cards:hover {
+   transform: none;
+   transition: none;
+   border: none;
+}
+
 .project__cards img {
     width: 90%;
     height: 90%;
@@ -719,5 +725,6 @@ footer {
     justify-content: center;
     padding: 10px 0 10px 0;
 }
+
 
 }
